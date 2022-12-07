@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif, 'Courier New', Courier, monospace;
+}
+#img{
+    width: 41%;
+    min-height: 100vh;
+    margin-top: 0;
+    position: fixed;
+    display: block;
+}
+#imagem{
+    width: 41%;
+    min-height: 100vh;
+    margin-top: 0;
+    position: fixed;
+    display: block;
+    
+}
+#container-form {
+    background-color: rgba(227, 224, 224, 0.361);
+    width: 60%;
+    height: 100vh;
+    padding: 10px;
+    margin-left: 41%;
+    position: fixed;
+}
+#container-form input {
+    border-style: hidden;
+    border-radius: 5px;
+    padding: 2px;
+    margin-bottom: 3px;
+}
+#container-form input:hover {
+    background-color: rgba(240, 248, 255, 0.529);
+    transition: 200ms;
+    border-radius: 10px;
+}
+#form-container {
+    background-color: rgba(70, 61, 78, 0.123);
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    border-style: none;
+    border: 1px solid rgba(0,0,0,.125);;
+    border-radius: 10px;
+} 
+#result-form{
+    background-color: rgba(70, 61, 78, 0.123);
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    margin: auto; 
+    border-style: none;
+    border: 1px solid rgba(0,0,0,.125);;
+    border-radius: 10px;
+}
+table, th, td {
+    width: 500px;
+    margin: auto;
+    height: 20px;
+    border:1px solid black; 
+
+}
+#zerartabela{
+    margin: 10px;
+}
+
+
