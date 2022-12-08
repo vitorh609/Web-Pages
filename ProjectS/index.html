@@ -4,17 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
+
+    <div id="impressao">
+        <div>
+            <div>
+                <img src="img/logo_sotech.png" alt=""> 
+                
+            </div>
+            <div>
+                <p id="funcionario-print">Funcionário:</p>
+                <p id="id-funcionario-print">Id do funcionario:</p>
+            </div>
+            <div>
+                <p id="veiculo-print">Veiculo:</p>
+                <p id="autorizador-print">Autorizado por:</p>
+            </div>
+            <div>
+                <p id="kml-print">km/l:</p>
+                <p id="km-total-print">Kilometragem total:</p>
+            </div>
+            <div id="replicar-funcao">
+
+            </div>
+        </div>
+    </div>
     <menu id="imagem">
         <!-- <img src="img/img-principal.jpg" id="img" alt=""> -->
     </menu>
 
-    
-    <div id="container-form">
-        <fieldset  id="form-container">
+    </div>
+    <div class="container-form">
+        <fieldset class="form-container">
+            <div>
+                Funcionário <input type="text" name="" id="funcionario">
+                Tipo: <select name="tipofuncionario" id="tipofuncionario">
+                    <option value="prestador">Prestador</option>
+                    <option value="Colaborador">Colaborador</option>
+                </select>
+                Veiculo: <input type="text" name="" id="veiculo">
+            </div>
+            <div>
+                Autorizado por: <input type="text" id="autorizador">
+                <input type="button" value="Salvar cabeçalho" onclick="salvarCabecalho()">
+            </div>
+        </fieldset>
+        <fieldset  class="form-container">
             <form action="">
                 <div>
                     Km/l <input type="number" id="kml">
@@ -48,6 +86,7 @@
                     <th>Km total</th>
                     <th>Valor(R$)</th>
                 </tr>
+                
             </table>
 
            <input type="button" value="Zerar tabela" id="zerartabela" onclick="zerarTabela()">
@@ -62,23 +101,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-        <!-- <div class="print" onclick="    ">
-
-            <img src="img/logo_sotech.png" alt="" id="">
-           
-            <table id="">
-                <tr>
-                    <th>Data</th>
-                    <th>Km inicial</th>
-                    <th>Km final</th>
-                    <th>Km total</th>
-                    <th>Valor(R$)</th>
-                </tr>
-                
-            </table>
-            <div id="assinatura">
-                Assinatura__________________________________ 
-            </div>
-        </div> -->

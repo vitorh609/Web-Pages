@@ -18,7 +18,7 @@
     display: block;
     
 }
-#container-form {
+.container-form {
     background-color: rgba(227, 224, 224, 0.361);
     width: 60%;
     height: 100vh;
@@ -26,18 +26,18 @@
     margin-left: 41%;
     position: fixed;
 }
-#container-form input {
+.container-form input {
     border-style: hidden;
     border-radius: 5px;
     padding: 2px;
     margin-bottom: 3px;
 }
-#container-form input:hover {
+.container-form input:hover {
     background-color: rgba(240, 248, 255, 0.529);
     transition: 200ms;
     border-radius: 10px;
 }
-#form-container {
+.form-container {
     background-color: rgba(70, 61, 78, 0.123);
     width: 600px;
     height: auto;
@@ -67,5 +67,16 @@ table, th, td {
 #zerartabela{
     margin: 10px;
 }
+#impressao{
+    display: none;
+}
+#impressao div div{
+    padding: 20px;
+    display: inline-block;
+}
 
-
+@media print{
+    #impressao{
+        display: block;
+    }
+}

@@ -1,3 +1,24 @@
+var funcionario = document.getElementById('funcionario')
+var funcionarioPrint = document.getElementById('funcionario-print')
+var idFuncionario = document.getElementById('tipofuncionario')
+var idFuncionarioPrint = document.getElementById('id-funcionario-print')
+var veiculo = document.getElementById('veiculo')
+var veiculoPrint = document.getElementById('veiculo-print')
+var autorizador = document.getElementById('autorizador')
+var autorizadorPrint = document.getElementById('autorizador-print')
+var kmlPrint = document.getElementById('kml-print')
+var kmlTotalPrint = document.getElementById('km-total-print')
+
+function salvarCabecalho(){
+    funcionarioPrint.innerText = `Funcionário: ${funcionario.value}`
+    idFuncionarioPrint.innerHTML = `Id do funcionário: ${idFuncionario.value}`
+    veiculoPrint.innerText = `Veiculo: ${veiculo.value}`
+    autorizadorPrint.innerText = `Autorizador por: ${autorizador.value}`
+    kmlPrint.innerText = `Km/l: ${kmL.value}`
+    
+}
+
+
 var kmL = document.getElementById("kml")
 var gasosa = document.getElementById("combustivel")
 var kmI = document.getElementById("kmInicio"); 
@@ -52,14 +73,15 @@ function novoPercurso(){
 
     }
 
+    // kmI.value = `${kmF.value} `
     // kmF.value = ''
-    // kmI.value = kmF
+    salvarCabecalho()
 }
 
-// function gerarPlanilha(){
+function gerarPlanilha(){
    
-//     window.print(); 
-// }
+    window.print(); 
+}
 
 function zerarTabela(){
     let zerarT = document.location.reload(true) 
