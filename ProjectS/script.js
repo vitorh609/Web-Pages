@@ -7,7 +7,7 @@ var veiculoPrint = document.getElementById('veiculo-print')
 var autorizador = document.getElementById('autorizador')
 var autorizadorPrint = document.getElementById('autorizador-print')
 var kmlPrint = document.getElementById('kml-print')
-var kmlTotalPrint = document.getElementById('km-total-print')
+var kmTotalPrint = document.getElementById('km-total-print')
 var tabPrint = document.getElementById('table-data-print')
 var dateI = document.getElementById("data"); 
 var dataPrint = document.getElementById('dataPrint')
@@ -20,7 +20,7 @@ function salvarCabecalho(){
     veiculoPrint.innerText = `Veiculo: ${veiculo.value}`
     autorizadorPrint.innerText = `Autorizador por: ${autorizador.value}`
     kmlPrint.innerText = `Km/l: ${kmL.value}`
-
+    kmTotalPrint.innerText = `Kilometragem total: ${kmFinal.value - kmInicio.value} Km`
     dataPrint.innerHTML = `Data: ${data}`
     
 }

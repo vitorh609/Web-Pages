@@ -18,6 +18,13 @@
     display: block;
     
 }
+#imagem-logo{
+    text-align: left;
+}
+#cabecalho{
+    display: inline-block;
+}
+
 .container-form {
     background-color: rgba(227, 224, 224, 0.361);
     width: 60%;
@@ -72,8 +79,10 @@ table, th, td {
     display: block;
 }
 #impressao div div{
-    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 50px;
     display: inline-block;
+   
 }
 #observacao{
     color: red;
