@@ -68,11 +68,19 @@ table, th, td {
     margin: 10px;
 }
 #impressao{
+    padding: 10px;
     display: block;
 }
 #impressao div div{
     padding: 20px;
     display: inline-block;
+}
+#observacao{
+    color: red;
+    margin: 30px;
+}
+#assinatura{
+    text-align: center;
 }
 
 @media print{

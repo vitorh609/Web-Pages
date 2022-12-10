@@ -8,40 +8,56 @@
     <title>Document</title>
 </head>
 <body>
-
-    <div id="impressao">
-        <div>
+    <fieldset id="impressao">
+        <div >
             <div>
-                <img src="img/logo_sotech.png" alt=""> 
+                <div>
+                    <img src="img/logo_sotech.png" alt=""> 
+                    
+                </div>
+                <div>
+                    <p id="funcionario-print">Funcionário:</p>
+                    <p id="id-funcionario-print">Id do funcionario:</p>
+                </div>
+                <div>
+                    <p id="veiculo-print">Veiculo:</p>
+                    <p id="autorizador-print">Autorizado por:</p>
+                </div>
+                <div>
+                    <p id="kml-print">km/l:</p>
+                    <p id="km-total-print">Kilometragem total:</p>
+                </div>
                 
             </div>
-            <div>
-                <p id="funcionario-print">Funcionário:</p>
-                <p id="id-funcionario-print">Id do funcionario:</p>
-            </div>
-            <div>
-                <p id="veiculo-print">Veiculo:</p>
-                <p id="autorizador-print">Autorizado por:</p>
-            </div>
-            <div>
-                <p id="kml-print">km/l:</p>
-                <p id="km-total-print">Kilometragem total:</p>
-            </div>
-            
         </div>
-    </div>
-    <div id="replicar-funcao">
-        <table id="table-data-print">
-            <tr>
-                <th>Data</th>
-                <th>Km inicial</th>
-                <th>Km final</th>
-                <th>Km total</th>
-                <th>Valor(R$)</th>
-            </tr>
-            
-        </table>
-    </div>
+        <div id="replicar-funcao">
+            <table id="table-data-print">
+                <tr>
+                    <th>Data</th>
+                    <th>Km inicial</th>
+                    <th>Km final</th>
+                    <th>Km total</th>
+                    <th>Valor(R$)</th>
+                </tr>
+                
+            </table>
+        </div>
+        <fieldset id="observacao">
+            Obs:
+        </fieldset>
+        <div>
+            Eu ______________________________ , confirmo que as informações acima são veridicas e me responsabilizo pelas mesmas
+        </div>
+        
+        <div id="dataPrint">
+            Data: 
+        </div>
+    
+        <div id="assinatura">
+            Assinatura: ______________________________
+        </div>
+    </fieldset>
+
     <menu id="imagem">
         <!-- <img src="img/img-principal.jpg" id="img" alt=""> -->
     </menu>

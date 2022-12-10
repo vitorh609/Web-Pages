@@ -10,6 +10,7 @@ var kmlPrint = document.getElementById('kml-print')
 var kmlTotalPrint = document.getElementById('km-total-print')
 var tabPrint = document.getElementById('table-data-print')
 var dateI = document.getElementById("data"); 
+var dataPrint = document.getElementById('dataPrint')
 let data = new Date().toLocaleDateString(); 
 dateI.value = data 
 
@@ -19,6 +20,8 @@ function salvarCabecalho(){
     veiculoPrint.innerText = `Veiculo: ${veiculo.value}`
     autorizadorPrint.innerText = `Autorizador por: ${autorizador.value}`
     kmlPrint.innerText = `Km/l: ${kmL.value}`
+
+    dataPrint.innerHTML = `Data: ${data}`
     
 }
 
