@@ -76,7 +76,7 @@ table, th, td {
 }
 #impressao{
     padding: 10px;
-    display: block;
+    display: none;
 }
 #impressao div div{
     margin-bottom: 10px;
