@@ -68,7 +68,7 @@ table, th, td {
     margin: 10px;
 }
 #impressao{
-    display: none;
+    display: block;
 }
 #impressao div div{
     padding: 20px;

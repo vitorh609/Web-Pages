@@ -8,6 +8,10 @@ var autorizador = document.getElementById('autorizador')
 var autorizadorPrint = document.getElementById('autorizador-print')
 var kmlPrint = document.getElementById('kml-print')
 var kmlTotalPrint = document.getElementById('km-total-print')
+var tabPrint = document.getElementById('table-data-print')
+var dateI = document.getElementById("data"); 
+let data = new Date().toLocaleDateString(); 
+dateI.value = data 
 
 function salvarCabecalho(){
     funcionarioPrint.innerText = `Funcionário: ${funcionario.value}`
@@ -18,18 +22,44 @@ function salvarCabecalho(){
     
 }
 
+function novoPercursoPrint(){
+    var tr = document.createElement('tr')
+    var dataprint  = document.createElement('th')
+    dataprint.innerHTML = `${dateI.value}`
+    tr.appendChild(dataprint)
+
+    var kmInicioPrint = document.createElement('th')
+    kmInicioPrint.innerText = `${kmI.value} Km`
+    tr.appendChild(kmInicioPrint)
+
+    var kmFinalPrint = document.createElement('th')
+    kmFinalPrint.innerText = `${kmFinal.value} Km`
+    tr.appendChild(kmFinalPrint)
+
+    var kmTotalPrint = document.createElement('th')
+    kmTotalPrint.innerText = `${kmFinal.value - kmInicio.value} Km`
+    tr.appendChild(kmTotalPrint)
+
+    let valorGPrint = Number(gasosa.value); 
+    let kmLitroPrint = Number(kmL.value);
+    let somaPrint = kmFinal.value - kmInicio.value
+
+    var kmValorprint = document.createElement('th')
+    kmValorprint.innerText = `R$${(valorGPrint / kmLitroPrint) * somaPrint }`
+    tr.appendChild(kmValorprint)
+
+    tabPrint.appendChild(tr)
+
+}
 
 var kmL = document.getElementById("kml")
 var gasosa = document.getElementById("combustivel")
 var kmI = document.getElementById("kmInicio"); 
 var kmF = document.getElementById("kmFinal"); 
-var dateI = document.getElementById("data"); 
+
 
 var tab = document.getElementById("table-data")
 
-
-let data = new Date().toLocaleDateString(); 
-dateI.value = data 
 
 
 function novoPercurso(){
@@ -73,9 +103,11 @@ function novoPercurso(){
 
     }
 
+    novoPercursoPrint()
+
     // kmI.value = `${kmF.value} `
     // kmF.value = ''
-    salvarCabecalho()
+    salvarCabecalho() 
 }
 
 function gerarPlanilha(){
